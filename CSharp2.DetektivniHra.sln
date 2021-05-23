@@ -3,10 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31220.234
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp2.DetektivniHra", "CSharp2.DetektivniHra\CSharp2.DetektivniHra.csproj", "{DE433B90-C174-4CA7-985F-3266665B1F8D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp2.DetektivniHra.App", "CSharp2.DetektivniHra.App\CSharp2.DetektivniHra.App.csproj", "{50030E49-9BF7-4A65-8DF2-7B8A618C54CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp2.DetektivniHra", "CSharp2.DetektivniHra\CSharp2.DetektivniHra.csproj", "{DE433B90-C174-4CA7-985F-3266665B1F8D}"
+EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
