@@ -98,11 +98,12 @@ namespace CSharp2.DetektivniHra
         {
             Console.WriteLine();
             Console.WriteLine("Hra byla dokoncena :)");
+            Console.WriteLine("Vzorove reseni muzete najit zde: https://github.com/Galilleo/Czechitas.CSharp2.DetektivniHra");
         }
 
         internal static void ZobrazUspechProtozeMaObleceniDoRestaurace(Detektiv detektiv, Osoba gvendolina)
         {
-            Console.WriteLine($"Vecer v restauraci mela {detektiv.Jmeno} jeidny cil - z {gvendolina.Jmeno} vyrazit info.");
+            Console.WriteLine($"Vecer v restauraci mela {detektiv.Jmeno} jediny cil - z {gvendolina.Jmeno} vyrazit info.");
         }
 
         internal static void ZobrazDetektivOdevzdalZpravuAleDukazyNebylyDostatecne(Detektiv detektiv)

@@ -63,19 +63,28 @@ namespace CSharp2.DetektivniHra.App
 
         private void OtevriTrezor(Trezor trezor)
         {
-            int i = 0;
-            while(trezor.JeZamceny)
+            for(int pin1 = 0; pin1 < 10; pin1++)
             {
-                try
+                for (int pin2 = 0; pin2 < 10; pin2++)
                 {
-                    trezor.ZadejKod(i.ToString());
+                    for(int pin3 = 0; pin3 < 10; pin3++)
+                    {
+                        for(int pin4 = 0; pin4 < 10; pin4++)
+                        {
+                            try
+                            {
+                                if (!trezor.JeZamceny) break;
+                                trezor.ZadejKod(pin1, pin2, pin3, pin4);
+                            }
+                            catch
+                            {
+                                // pokus selhal, spatny pin, jde se dal ...
+                            }
+                        }
+                    }
                 }
-                catch
-                {
-                    i++;
-                }
-            }
-
+            }   
+            
             if (!trezor.JeZamceny)
             {
                 foreach(IDukazniMaterial material in trezor.ObsahTrezoru)

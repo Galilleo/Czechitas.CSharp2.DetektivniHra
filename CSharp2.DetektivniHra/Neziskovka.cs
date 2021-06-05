@@ -17,7 +17,11 @@ namespace CSharp2.DetektivniHra
 
         public static readonly List<Mistnost> Mistnosti;
 
-        internal static string PinTrezoru { get; private set; }
+        internal static readonly int pinTrezoru1;
+        internal static readonly int pinTrezoru2;
+        internal static readonly int pinTrezoru3;
+        internal static readonly int pinTrezoru4;
+
         internal static Trezor TrezorVReditelne { get; private set; }
 
         static Neziskovka()
@@ -45,8 +49,8 @@ namespace CSharp2.DetektivniHra
                 new Kurz("Programovani a jeho vliv na rostliny", TypKurzu.Jednodenni),
             };
 
-            PinTrezoru = Trezor.VygenerujCiselnyPin();
-            TrezorVReditelne = new Trezor(PinTrezoru, new List<object>() { new Doklady() });
+            Trezor.VygenerujCiselnyPin(out pinTrezoru1, out pinTrezoru2, out pinTrezoru3, out pinTrezoru4);
+            TrezorVReditelne = new Trezor(pinTrezoru1, pinTrezoru2, pinTrezoru3, pinTrezoru4, new List<object>() { new Doklady() });
 
             Mistnosti = new List<Mistnost>()
             {
