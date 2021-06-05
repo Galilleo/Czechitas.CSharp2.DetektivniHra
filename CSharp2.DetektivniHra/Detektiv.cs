@@ -13,6 +13,7 @@ namespace CSharp2.DetektivniHra
         public Detektiv(string jmeno) : base(jmeno, Pohlavi.Zenske)
         {
             Dovednost = Dovednost.ReseniProblemu;
+            Obleceni = Obleceni.Pyzamo;
         }
 
         public virtual void ProhledejDukazniMaterial(IReadOnlyList<object> material)
