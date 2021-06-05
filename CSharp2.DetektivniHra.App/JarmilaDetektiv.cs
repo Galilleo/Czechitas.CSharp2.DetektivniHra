@@ -1,5 +1,4 @@
-﻿using CSharp2.DetectiveStory.App;
-using CSharp2.DetektivniHra.Material;
+﻿using CSharp2.DetektivniHra.Material;
 using CSharp2.DetektivniHra.Studium;
 using System;
 using System.Collections.Generic;
