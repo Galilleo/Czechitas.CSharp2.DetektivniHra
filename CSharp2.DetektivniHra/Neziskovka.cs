@@ -17,10 +17,10 @@ namespace CSharp2.DetektivniHra
 
         public static readonly List<Mistnost> Mistnosti;
 
-        internal static readonly int pinTrezoru1;
-        internal static readonly int pinTrezoru2;
-        internal static readonly int pinTrezoru3;
-        internal static readonly int pinTrezoru4;
+        private static readonly int pinTrezoru1;
+        private static readonly int pinTrezoru2;
+        private static readonly int pinTrezoru3;
+        private static readonly int pinTrezoru4;
 
         internal static Trezor TrezorVReditelne { get; private set; }
 
